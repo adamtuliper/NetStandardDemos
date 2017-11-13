@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <!--//can change to 2.0
+    <TargetFramework>netcoreapp1.0</TargetFramework>-->
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <RuntimeIdentifiers>win10-x64;osx.10.11-x64;</RuntimeIdentifiers>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Net461FrameworkClassLibrary\Net461FrameworkClassLibrary.csproj" />
+    <ProjectReference Include="..\..\NetCoreClassLib\CoreClassLib.csproj" />
+    <ProjectReference Include="..\..\NetStandardClassLib\NetStandardClassLib.csproj" />
+  </ItemGroup>
+
+</Project>
