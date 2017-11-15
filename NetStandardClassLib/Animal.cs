@@ -17,14 +17,13 @@ namespace NetStandardClassLib
             //https://github.com/dotnet/standard/blob/master/docs/versions/netstandard1.6_diff.md
             var list = new List<int>();
             var bip = new int[] { 1, 2, 3, 4, 5 };
-
+            Console.WriteLine("Testing");
             //THIS was added in .NET Standard 1.6
 #if NETSTANDARD1_6
             Enumerable.Append<int>(bip, 10);
 #endif
             //No app domain in .net core!
             //string callingDomainName = Thread.GetDomain().FriendlyName;
-
 
         }
         public string GetName()

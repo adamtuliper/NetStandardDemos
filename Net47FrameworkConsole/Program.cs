@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Net461FrameworkConsole
+namespace Net47FrameworkConsole
 {
     class Program
     {
@@ -13,7 +13,6 @@ namespace Net461FrameworkConsole
         {
             var animal = new Animal();
             Console.WriteLine("NetStandard Animal created");
-            Console.ReadLine();
         }
     }
 }
