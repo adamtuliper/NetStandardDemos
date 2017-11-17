@@ -5,6 +5,7 @@ using System.Collections;
 using System.Collections.Specialized;
 using System.Linq;
 using System.Threading;
+using System.Data;
 
 namespace NetStandardClassLib
 {
@@ -24,7 +25,7 @@ namespace NetStandardClassLib
 #endif
             //No app domain in .net core!
             //string callingDomainName = Thread.GetDomain().FriendlyName;
-
+            DataSet ds = new DataSet();
         }
         public string GetName()
         {
