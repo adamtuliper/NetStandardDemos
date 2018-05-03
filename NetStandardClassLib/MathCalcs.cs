@@ -11,6 +11,8 @@ namespace NetStandardClassLib
         public static int Fibonacci(int x)
         {
             if (x < 0) throw new ArgumentException("Less negativity please!", nameof(x));
+            
+            //This doesn't exist in netstandard 1.x
             #if NETSTANDARD2_0
               var ds = new DataSet();
               ds.Tables.Add(new DataTable());
